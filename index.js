@@ -39,7 +39,7 @@ async function run() {
       const result = await artAndCraftCollection.findOne(query);
       res.send(result);
     });
-    //post
+    // post
     app.post("/artAndCraft", async (req, res) => {
       const newCoffee = req.body;
       console.log(newCoffee);

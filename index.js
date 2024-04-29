@@ -32,7 +32,7 @@ async function run() {
       const reslut = await cursor.toArray();
       res.send(reslut);
     });
-    //get single item
+    // get single item
     app.get("/artAndCraft/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };

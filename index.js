@@ -68,7 +68,7 @@ async function run() {
       const result = await artAndCraftCollection.updateOne(filter, coffee, options);
       res.send(result);
     });
-    // delete
+    //delete
     app.delete("/artAndCraft/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };

@@ -26,7 +26,7 @@ async function run() {
 
     const artAndCraftCollection = client.db("artAndCraftDB").collection("artAndCraft");
 
-    //get
+    // get
     app.get("/artAndCraft", async (req, res) => {
       const cursor = artAndCraftCollection.find();
       const reslut = await cursor.toArray();
